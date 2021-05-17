@@ -78,14 +78,15 @@ function Inputbox() {
 
   return (
     <div className="m-2 md:m-4 bg-white p-2 md:p-4 rounded-lg md:rounded-xl ">
-      <div className="flex items-center space-x-4">
-        <Image
-          className="rounded-full"
-          src={photoURL}
-          width={40}
-          height={40}
-          layout="fixed"
-        />
+      <div className="flex items-center">
+        <div className="hidden md:flex md:items-center md:mr-4">
+          <Image
+            className="rounded-full"
+            src={photoURL}
+            width={40}
+            height={40}
+          />
+        </div>
         <form className="flex flex-1">
           <input
             type="text"
